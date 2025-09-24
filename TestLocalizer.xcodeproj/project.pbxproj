@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		4AE155762E82F51A0039BD17 /* CrowdinSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 4AE155752E82F51A0039BD17 /* CrowdinSDK */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		4AE155642E82F3FC0039BD17 /* TestLocalizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestLocalizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4AE155762E82F51A0039BD17 /* CrowdinSDK in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +70,8 @@
 			);
 			name = TestLocalizer;
 			packageProductDependencies = (
+				4AE155752E82F51A0039BD17 /* CrowdinSDK */,
+				4AE155772E82F51A0039BD17 /* CrowdinXCTestScreenshots */,
 			);
 			productName = TestLocalizer;
 			productReference = 4AE155642E82F3FC0039BD17 /* TestLocalizer.app */;
@@ -91,9 +98,13 @@
 			knownRegions = (
 				en,
 				Base,
+				es,
 			);
 			mainGroup = 4AE1555B2E82F3FC0039BD17;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				4AE155742E82F51A0039BD17 /* XCRemoteSwiftPackageReference "mobile-sdk-ios" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 4AE155652E82F3FC0039BD17 /* Products */;
 			projectDirPath = "";
@@ -264,7 +275,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.7;
@@ -308,7 +319,7 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 15.7;
@@ -351,6 +362,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4AE155742E82F51A0039BD17 /* XCRemoteSwiftPackageReference "mobile-sdk-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/crowdin/mobile-sdk-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.12.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4AE155752E82F51A0039BD17 /* CrowdinSDK */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AE155742E82F51A0039BD17 /* XCRemoteSwiftPackageReference "mobile-sdk-ios" */;
+			productName = CrowdinSDK;
+		};
+		4AE155772E82F51A0039BD17 /* CrowdinXCTestScreenshots */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4AE155742E82F51A0039BD17 /* XCRemoteSwiftPackageReference "mobile-sdk-ios" */;
+			productName = CrowdinXCTestScreenshots;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 4AE1555C2E82F3FC0039BD17 /* Project object */;
 }
