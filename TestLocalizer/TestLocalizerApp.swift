@@ -10,7 +10,7 @@ import SwiftUI
 @main
 struct TestLocalizerApp: App {
     
-
+    let service = CrowdinService()
     var body: some Scene {
         WindowGroup {
             ContentView()

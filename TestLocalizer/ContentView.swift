@@ -6,10 +6,10 @@
 //
 
 import SwiftUI
+import CrowdinSDK
 
 struct ContentView: View {
     
-    let service = CrowdinService()
     var body: some View {
         VStack {
             Image(systemName: "globe")
@@ -17,6 +17,7 @@ struct ContentView: View {
                 .foregroundStyle(.tint)
             Text("test")
             Text("I want to lie down")
+            Text("other".cw_localized)
         }
         .padding()
     }
