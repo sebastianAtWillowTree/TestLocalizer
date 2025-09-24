@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4A31B7AF2E84892700FE2828 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 4A31B7AE2E84892700FE2828 /* Localizable.xcstrings */; };
 		4AE155762E82F51A0039BD17 /* CrowdinSDK in Frameworks */ = {isa = PBXBuildFile; productRef = 4AE155752E82F51A0039BD17 /* CrowdinSDK */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4A31B7AE2E84892700FE2828 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		4AE155642E82F3FC0039BD17 /* TestLocalizer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestLocalizer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -37,6 +39,7 @@
 		4AE1555B2E82F3FC0039BD17 = {
 			isa = PBXGroup;
 			children = (
+				4A31B7AE2E84892700FE2828 /* Localizable.xcstrings */,
 				4AE155662E82F3FC0039BD17 /* TestLocalizer */,
 				4AE155652E82F3FC0039BD17 /* Products */,
 			);
@@ -120,6 +123,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A31B7AF2E84892700FE2828 /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,6 +198,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -249,6 +254,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};
