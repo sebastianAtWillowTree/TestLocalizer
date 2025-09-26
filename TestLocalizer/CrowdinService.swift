@@ -43,36 +43,29 @@ struct CrowdinService {
         
         CrowdinSDK.startWithConfig(self.config) {
             
-            print("\n\n\n\n\n\n\(CrowdinSDK.allAvailableLocalizations)")
+            print("\n\n\n\n\n\n(1)\(CrowdinSDK.allAvailableLocalizations)")
+            /*
+            print("\n\n\n\n\n\n(2)\(CrowdinSDK.localizationDictionary(for: "en"))")
+            */
+            print("\n\n\n\n\n\n(3)\(CrowdinSDK.localizationDictionary(for: "es"))")
             
-            print("\n\n\n\n\n\n\(CrowdinSDK.localizationDictionary(for: "en"))")
-            
-            print("\n\n\n\n\n\n\(CrowdinSDK.localizationDictionary(for: "es-ES"))")
-            
-            
-
-            
-            CrowdinSDK.forceRefreshLocalization()
-            CrowdinSDK.reloadUI()
         }
+        /*
         CrowdinSDK.startRealtimeUpdates(success: {
             print("successive")
-            CrowdinSDK.forceRefreshLocalization()
-            CrowdinSDK.reloadUI()
-            print("\n\n\n\n\n\n\(CrowdinSDK.localizationDictionary(for: "en"))")
+            //CrowdinSDK.forceRefreshLocalization()
+            //CrowdinSDK.reloadUI()
             
-            print("\n\n\n\n\n\n\(CrowdinSDK.localizationDictionary(for: "es"))")
+            print("\n\n\n\n\n\n(5)\(CrowdinSDK.localizationDictionary(for: "es"))")
+            
+            CrowdinSDK.reloadUI()
         },
-                                        error: { e in print("errored \(e)")})
-        
-        CrowdinSDK.startIntervalUpdates(interval: 900)
-        
-        CrowdinSDK.currentLocalization = "es"
+        error: { e in print("errored \(e)")})*/
     }
 }
 
 extension CrowdinService {
-    static let testKey = "76f789e5cb49fde1c83a41cac998234365b4490374db3ee496b83d4f1f4ee81859bf4555306f4925"
+    static let testKey = "345d3788b2d69ab2e4a249e38e2b99702fe288e7b2df88a7d7ff225fe9b61d739b9c1b0a1a10ac7d"
     
-    static let testDistHash = "7c2170e92b5920904e6b46abl0i"
+    static let testDistHash = "88a1c246e7934d371323a9abl0i"
 }

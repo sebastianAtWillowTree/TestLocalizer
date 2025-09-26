@@ -15,8 +15,8 @@ struct ContentView: View {
             Image(systemName: "globe")
                 .imageScale(.large)
                 .foregroundStyle(.tint)
-            Text("test")
-            Text("I want to lie down")
+            Text(String(localized:"test"))
+            Text("preset_0B491C3E-1A7F-4A94-A523-6DE329BF9E72".cw_localized)
             Text("other".cw_localized)
         }
         .padding()
